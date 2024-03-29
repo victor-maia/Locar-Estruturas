@@ -7,9 +7,13 @@ Exibição dos produtos disponíveis para locação.
 Informações detalhadas sobre cada produto.
 Formulário de contato para solicitar orçamentos.
 Informações sobre a empresa e seus serviços.
+
 Tecnologias Utilizadas
 
-HTML5 CSS3 JavaScript PHP
+HTML5: 🌐
+CSS3: 🎨
+JavaScript: 💻
+PHP: 🐘
 
 Contribuição
 
