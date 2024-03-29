@@ -1,0 +1,11 @@
+.effect-title {
+    visibility: hidden;
+}
+
+.effect-p {
+    visibility: hidden;
+}
+
+.effect-mission, .effect-vision, .effect-values {
+    visibility: hidden;
+}

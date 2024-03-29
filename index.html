@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+  <meta name="description" content="Locação de mesas, cadeiras, freezers, toalhas, tendas e outros equipamentos para eventos.">
+  <meta name="keywords" content="Locação, eventos, mesas, cadeiras, freezers, toalhas, tendas">
+  <meta property="og:title" content="Locação de Equipamentos para Eventos">
+  <meta property="og:description" content="Locação de mesas, cadeiras, freezers, toalhas, tendas e outros equipamentos para eventos.">
+  <meta property="og:url" content="https://locarestruturas.com.br">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reveal.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  
+
+
+  <script src="https://kit.fontawesome.com/d1aec26868.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" href="assets/locar_icon.png" type="image/x-icon">
+
+  <title>Locar Estruturas</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="slide.js" defer></script>
+  <script src="menu.js" defer></script>
+  <script src="budget-validate.js" defer></script>
+  <script src="animate-menu.js" defer></script>
+  <script src="filter.js" defer></script>
+  <script src="ancora.js" defer></script>
+  <script src="reveal.js" defer></script>
+  <script src="budget-form.js" defer></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+</head>
+
+<body>  
+  <header id="header">
+    <div class="container">
+
+      <div class="flex-menu">
+
+        <a href="#"><img src="assets/logo.png" width="250px" alt="Locar Estruturas" class="logo"></a>
+
+        <nav>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">SOBRE</a></li>
+            <li><a href="#services">SERVIÇOS</a></li>
+            <li><a href="#clients">CLIENTES</a></li>
+            <li><a href="#products">PRODUTOS</a></li>
+            <li><a href="#budget">ORÇAMENTO</a></li>
+  
+          </ul>
+        </nav>
+
+        <!-- div class="btn-contato">
+          <a href="#contact-section"><button>CONTATO</button></a>
+        </div> -->
+        
+
+      </div><!--flex-->
+
+      <div class="flex-menu-mobile" id="flex-menu-mobile">
+        <div class="logo-area">
+          <a href="#"><img src="assets/logo.png" width="250px" height="120px"></a>
+
+          <div class="menu-bar">
+            <button id="btn-bar" onclick="menuAnimate()"><i class="fa-solid fa-bars"></i></button>
+          </div>
+        </div>
+
+
+        <nav>
+
+          <ul class="mobile-menu-links" id="mobile-menu-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">SOBRE</a></li>
+            <li><a href="#services">SERVIÇOS</a></li>
+            <li><a href="#clients">CLIENTES</a></li>
+            <li><a href="#products">PRODUTOS</a></li>
+            <li><a href="#budget">ORÇAMENTO</a></li>
+
+          </ul>
+
+        </nav>
+
+
+
+      </div>
+
+    </div><!--container-->
+
+    
+  </header>
+
+
+
+  <section class="slider">
+    <div class="slider-content">
+        
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+
+        <div class="slide-box primeiro">
+            <img class="img-desktop" src="assets/slide1.jpg"  alt="slide 1">
+            <img class="img-mobile" src="assets/1.jpg" alt="slide 1">
+            
+        </div>
+
+        <div class="slide-box">
+            <img class="img-desktop" src="assets/slide2.jpg" alt="slide 3">
+            <img class="img-mobile" src="assets/2.jpg" alt="slide 1">
+
+        </div>
+        
+        <div class="slide-box">
+            <img class="img-desktop" src="assets/slide3.jpg" alt="slide 3">
+            <img class="img-mobile" src="assets/3.jpg" alt="slide 3">
+
+        </div>
+
+        <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+        </div>
+
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+    </div>
+</section>
+ <!-- SERVIÇOS -->
+
+  
+
+
+
+  <!-- Sobre -->
+  <h1 class="section-title services-title " id="aboutTitle" >SOBRE</h1>
+  <section class="about" id="about">
+    <div class="aboutText">
+      <p>A LOCAR ESTRUTURAS iniciou sua jornada há mais de 10 anos, com a missão de transformar o mercado de eventos. Ao longo dos anos, conquistamos clientes emblemáticos e nos tornamos referência no setor. Nosso compromisso com a qualidade e a inovação nos permite atender eventos de diversos segmentos, desde pequenos encontros até grandes celebrações. Junte-se a nós e faça do seu evento um sucesso com a LOCAR ESTRUTURAS.
+    </div>
+  </section>
+
+  <div class="aboutMvv">
+    <div class="mission effect-mission">
+      <div class="missionIcon">
+        <i class="fa-solid fa-bullseye"></i>
+      </div>
+      
+      <div class="MvvText ">
+        <h2>MISSÃO</h2>
+        <p>Oferecer tendas e soluções completas em estruturas e mobiliário para eventos, festas, reuniões corporativas e sociais, com foco absoluto na satisfação dos clientes, proporcionando experiências memoráveis e de excelência.</p>
+      </div>  
+    </div>
+
+    <div class="vision effect-vision">
+
+      <div class="visionIcon">
+        <i class="fa-solid fa-eye"></i>
+      </div>
+
+      <div class="MvvText ">
+        <h2>VISÃO</h2>
+        Ser a referência máxima em atendimento no ramo de eventos, reconhecida pela inovação, eficiência e praticidade em cada serviço prestado, superando expectativas e criando laços duradouros com nossos clientes e parceiros.
+      </div>
+    </div>
+
+    <div class="values effect-values">
+
+      <div class="valuesIcon">
+        <i class="fa-solid fa-hand-holding-heart"></i>
+      </div>
+
+      <div class="MvvText">
+        <h2>VALORES</h2>
+        Norteados pela ética, respeito e cordialidade, cultivamos o otimismo e a inovação como pilares fundamentais, buscando a eficiência em cada detalhe, com persistência e determinação para superar desafios e garantir a excelência.
+      </div>
+    </div>
+
+ 
+  </div>
+
+
+  <div class="mapContainer">
+    <div class="map">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.7413380338085!2d-46.5078578!3d-23.4337092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce8ad0c79fceed%3A0xb0df72940616fd40!2sR.%20S%C3%A3o%20Jos%C3%A9%20do%20Cal%C3%A7ado%2C%2086%20-%20Vila%20Mesquita%2C%20Guarulhos%20-%20SP%2C%2007141-030!5e0!3m2!1spt-BR!2sbr!4v1710382920918!5m2!1spt-BR!2sbr" width="360" height="240" class="mobileMap" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.7413380338085!2d-46.5078578!3d-23.4337092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce8ad0c79fceed%3A0xb0df72940616fd40!2sR.%20S%C3%A3o%20Jos%C3%A9%20do%20Cal%C3%A7ado%2C%2086%20-%20Vila%20Mesquita%2C%20Guarulhos%20-%20SP%2C%2007141-030!5e0!3m2!1spt-BR!2sbr!4v1710382920918!5m2!1spt-BR!2sbr" width="1200" height="360" class="desktopMap" "border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+    <h1 class="section-title effect-title">SERVIÇOS</h1>
+    <section class="services" id="services">
+      <div class="serviceText">
+        <p class="effect-p">Transforme seu evento em um sucesso memorável com a Locar Estruturas! Oferecemos tendas, mesas,
+          cadeiras, freezers, toalhas, e muito mais para garantir o conforto e a elegância do seu evento. Conte com a qualidade e a
+          excelência que só a Locar Estruturas pode oferecer. <a href="#budget" style="color: black; text-decoration: none;"><b>Faça já seu orçamento!</b></a></p>
+      </div>
+    </section>
+
+    <h1 class="section-title effect-title" id="clients">CLIENTES</h1>
+    <section class="clients">
+
+      <div class="clientsP">
+        <p class="effect-p">
+        Construímos uma sólida trajetória pautada pela excelência em serviços e pela busca constante pela satisfação de nossos clientes. Ao longo de nossa história, tivemos o privilégio de atender clientes renomados, tais como Grupo Primaveras, Pneus Continental, Laboratório Aché e Vip Cargas Aéreas, consolidando nossa expertise e comprometimento com a qualidade em cada projeto realizado.
+        </p>
+      </div>
+      <div class="clientsImg">
+
+        <div class="clientDescription">
+          
+          <div class="clientLogo">
+            <img src="assets/clientes/1.png" width="170px" height="40">
+          </div>
+
+          <p>O Primaveras é reconhecido como um dos principais grupos funerários do Brasil, com prêmios nacionais e internacionais pelos serviços e atendimento</p>
+        </div>
+
+        <div class="clientDescription">
+          <div class="clientLogo">
+            <img src="assets/clientes/2.png" width="170px" height="40">
+          </div>
+
+          <p >
+            Fundada em 1871, a empresa de tecnologia oferece soluções seguras, eficientes, inteligentes e soluções acessíveis para veículos, máquinas, trânsito e transporte.
+          </p>
+        </div>
+
+        <div class="clientDescription">
+          <div class="clientLogo">
+            <img src="assets/clientes/3.png" width="170px" height="40">
+          </div>
+
+          <p>O Aché atua há 57 anos no desenvolvimento de soluções inovadoras, que resultam em produtos e serviços diferenciados disponibilizados ao mercado farmacêutico</p>
+        </div>
+
+        <div class="clientDescription">
+          <div class="clientLogo">
+            <img src="assets/clientes/4.png" width="170px" height="40">
+          </div>
+
+          <p>
+            Especializada em transportes de cargas aéreas e rodoviárias, a empresa está no mercado há 19 anos e seu maior foco é gerar soluções logísticas econômicas, ágeis e seguras.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+  <!--Produtos-->
+
+  <h1 class="section-title effect-title">PRODUTOS</h1>
+
+  <div class="products-container products-title " id="products">
+    <div class="filter_buttons effect-p">
+      <button data-name="tendas" class="active">Tendas</button>
+      <button data-name="mesas_cadeiras">Mesas & Cadeiras</button>
+      <button data-name="freezers">Freezers</button>
+      <button data-name="toalhas">Toalhas</button>
+      <button data-name="pisos_carpetes">Pisos & Carpetes</button>
+    </div>
+
+    <div class="filterable_cards">
+
+      <div class="card" data-name="tendas">
+        <img src="assets/Tendas/tenda1.jpg">
+
+        <div class="card_body ">
+          <h6 class="card_title">Tenda</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card" data-name="tendas">
+        <img src="assets/Tendas/tenda2.jpg">
+
+        <div class="card_body">
+          <h6 class="card_title">Tenda</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+
+      <div class="card" data-name="tendas">
+        <img src="assets/Tendas/7.png">
+
+        <div class="card_body">
+          <h6 class="card_title">Tenda</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+
+      <div class="card" data-name="tendas">
+        <img src="assets/Tendas/8.png">
+
+        <div class="card_body">
+          <h6 class="card_title">Tenda</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide " data-name="mesas_cadeiras">
+        <img src="assets/mesas_cadeiras/mesacadeira1.jpg">
+
+        <div class="card_body">
+          <h6 class="card_title">Mesas & Cadeiras</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="mesas_cadeiras">
+        <img src="assets/mesas_cadeiras/mesacadeira2.jpg">
+
+        <div class="card_body">
+          <h6 class="card_title">Mesas & Cadeiras</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="mesas_cadeiras">
+        <img src="assets/mesas_cadeiras/5.png">
+
+        <div class="card_body">
+          <h6 class="card_title">Mesas & Cadeiras</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="mesas_cadeiras">
+        <img src="assets/mesas_cadeiras/6.png">
+
+        <div class="card_body">
+          <h6 class="card_title">Mesas & Cadeiras</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="freezers">
+        <img src="assets/Freezers/freezer1.jpg">
+
+        <div class="card_body">
+          <h6 class="card_title">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="freezers">
+        <img src="assets/Freezers/freezer2.jpg">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="freezers">
+        <img src="assets/Freezers/10.png">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="freezers">
+        <img src="assets/Freezers/9.png">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+   
+
+      <div class="card hide" data-name="toalhas">
+        <img src="assets/toalhas/1.jpg">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="toalhas">
+        <img src="assets/toalhas/2.jpg">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="toalhas">
+        <img src="assets/toalhas/3.jpg">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="toalhas">
+        <img src="assets/toalhas/4.jpg">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="pisos_carpetes">
+        <img src="assets/pisos&carpetes/15.png">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="pisos_carpetes">
+        <img src="assets/pisos&carpetes/16.png">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="pisos_carpetes">
+        <img src="assets/pisos&carpetes/17.png">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="pisos_carpetes">
+        <img src="assets/pisos&carpetes/18.png">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+     <!-- <div class="card hide" data-name="palcos">
+        <img src="assets/Palcos/11.png">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="palcos">
+        <img src="assets/Palcos/12.png">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="palcos">
+        <img src="assets/Palcos/13.png">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div>
+
+      <div class="card hide" data-name="palcos">
+        <img src="assets/Palcos/14.png">
+
+        <div class="card_body">
+          <h6 class="card_title data">Freezers</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos ea quod soluta voluptatibus quos odit facilis, doloremque eius molestiae ipsa veritatis ex sapiente eligendi adipisci animi non? Expedita?</p>
+        </div>
+
+      </div> -->
+
+    </div>
+  </div> 
+  <!-- Clientes -->
+
+  
+
+  <!-- Formulário de Orçamento -->
+
+  <h1 class="section-title budget-title effect-title" id="budget">ORÇAMENTO</h1>
+
+
+  <form action="enviar.php" method="POST" id="event-form" class="event-form ">
+
+
+
+    <fieldset>
+      <div class="fieldset-wrapper" id="requester-data">
+
+        <legend>Dados do Contratante</legend>
+
+        <div class="input-wrapper">
+          <label for="nomeEmpresa">Nome da empresa <span></span></label>
+          <input type="text" id="nomeEmpresa" name="nomeEmpresa" required>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="solicitanteEvento"> Solicitante Responsável</label>
+          <input type="text" id="solicitanteEvento" name="solicitanteEvento" required>
+        </div>
+
+
+        <div class="input-wrapper">
+          <label for="telefoneCliente"> Telefone <span>(somente números)</span></label>
+          <input type="number" id="telefoneCliente" name="telefoneCliente" required>
+        </div>
+
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-wrapper" id="event-data">
+
+        <legend>Dados do Evento</legend>
+
+        <div class="input-wrapper">
+          <label for="nomeEvento">Nome do evento </label>
+          <input type="text" id="nomeEvento" name="nomeEvento" required>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="descricaoEvento"> Descrição do Evento <span>(sobre o evento e produtos que serão usados)</span></label>
+          <textarea name="descricaoEvento" id="descricaoEvento"  cols="30" rows="10" required></textarea>
+        </div>
+
+
+        <div class="input-wrapper">
+          <label for="eventoTelefone"> Telefone <span>(somente números)</span></label>
+          <input type="number" id="eventoTelefone" name="eventoTelefone" required>
+        </div>
+
+      </div>
+
+    
+
+
+        <div class="input-wrapper">
+          <label for="eventoCep">CEP</label>
+          <input type="text" id="eventoCep" name="eventoCep" required>
+        </div>
+
+       
+      </div>
+      </div>
+
+
+
+
+      <div class="fieldset-wrapper fieldset2">
+        <div class="col-3">
+          <div class="input-wrapper">
+            <label for="eventoData">Data</label>
+            <input type="date" id="eventoData" name="eventoData" required>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="eventoBegin">Das</label>
+            <input type="time" id="eventoBegin" name="eventoBegin" required>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="eventoEnd">Até</label>
+            <input type="time" id="eventoEnd" name="eventoEnd" required>
+          </div>
+        </div>
+      
+    </fieldset>
+
+    <div class="form-button">
+      <button>Solicitar Orçamento</button>
+    </div>
+
+
+
+
+  </form>
+
+
+
+  <!-- Formulário de Contato -->
+
+  <!-- <h1>
+    CONTATO
+  </h1> -->
+
+  <section class="contact" id="contact-section">
+
+    <div class="form-container">
+
+
+      <form action="" post="post" id="contact-form">
+        <fieldset>
+          <div class="fieldset-wrapper" id="requester-data">
+
+            <legend>Fale Conosco</legend>
+
+            <div class="input-wrapper">
+              <label for="contact-name">Nome Completo <span></span></label>
+              <input type="text" id="contact-name" required>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="contact-phone"> Telefone <span>(Whatsapp)</span></label>
+              <input type="url" id="contact-phone" required>
+            </div>
+
+
+            <div class="input-wrapper">
+              <label for="contact-message">Mensagem:</label>
+              <textarea id="ccontact-message" name="contat-message" required></textarea>
+
+            </div>
+
+          </div>
+
+
+        </fieldset>
+
+
+        <div class="form-button">
+          <button>Enviar</button>
+        </div>
+
+
+          <div class="contact-socials">
+              
+            <a href="#" class="social-link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+
+            <a href="#" class="social-link" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+
+
+            <a href="#" class="social-link" id="youtube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+
+
+          </div>
+     
+
+      </form>
+
+
+
+    </div>
+
+  </section>
+
+  
+
+  <footer>
+
+    <div id="footer-content">
+
+      <div id="footer-contacts">
+        <h3>Locar Estruturas</h3>
+        <p>Locação de Tendas<br>
+          Mesas & Cadeiras<br>
+          Montagem de Palcos<br></p>
+
+
+
+        <div id="footer-social-media">
+          <a href="https://www.instagram.com/locarestruturas" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://www.youtube.com/channel/UCTJe-gAPEw5ePNfd9dXzNxw" class="footer-link" id="youtube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <h3>Links</h3>
+        </li>
+        <li><a href="#services" class="footer-link">Serviços</a></li>
+        <li><a href="#about" class="footer-link">Sobre</a></li>
+        <li><a href="#products" class="footer-link">Produtos</a></li>
+        <li><a href="#budget" class="footer-link">Orçamento</a></li>
+      </ul>
+
+
+      <ul class="footer-list"> 
+        <h3>Endereço</h3>
+
+        <li>
+          R. São José do Calçado, 86 <br> Guarulhos - SP <br>07141-030
+        </li>
+      </ul>
+
+
+      <ul class="footer-list">
+        <li>
+          <h3>Contato</h3>
+        </li>
+        <li>Telefone: (11) 99871-3382</li>
+        <li>Email: atendimento@locarestruturas.com.br </li>
+      
+
+        
+      </ul>
+
+      
+
+
+
+    </div>
+    <div id="footer-copyright">
+      &#169 2024 Todos os direitos reservados - Locar Estruturas - Desenvolvido por Victor Maia
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=+5511998713382&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="whatsapp-button">
+    <i class="fab fa-whatsapp"></i>
+</a>
+  
+
+
+  
+</body>
+
+</html>
